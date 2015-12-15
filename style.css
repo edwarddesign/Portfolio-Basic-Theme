@@ -4,14 +4,89 @@
   Author: Trevor
 */
 body html {
-	width: 100%;
+	width: auto !important;
+  overflow-x: hidden !important;
+  width: 100%;
 	height: 100%;
+  padding: 0px;
 }
-
+.full_width .page {
+  width: 98.8em;
+  margin: 0, auto;
+  padding-right: 2.2em;
+  padding-left: 2.2em; 
+}
 .navbar{
 	margin-bottom: 0px;
 	width: 100%;
 	border-radius: 0px;
+}
+
+.home-wallpaper{
+  width: 100%;
+  height: 100%;
+}
+
+.home_box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.welcomebox {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  text-align: center;
+
+
+}
+
+.verticalLine{
+  border-left: thick solid red;
+}
+
+.welcome-line-title {
+  margin-top: 0;
+  color: inherit;
+  text-align: right;
+}
+.welcome-line-title {
+  height: 120px; 
+  width:2px; 
+  background-color: red;
+  float: left; 
+  margin-right: 20px;
+}
+
+.welcomebox h1 {
+  font-size: 6em;
+  font-weight: 600;
+  line-height: 40px;
+  color: white;
+
+
+    margin: 0px auto;
+ 
+ 
+    width: 200px;
+  height: 50px;
+}
+/* ...........................footer.....................*/
+
+.footer{
+  background-color: #334d68 ; 
+  margin-bottom: 0;
+  height: 200px;
+ 
+}
+.footer p{
+  margin-top: 70px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
 }
 
 /* ...........................Google Maps.....................*/
@@ -53,25 +128,6 @@ body html {
 }
 
 
-/* ...........................animation for the navbar .....................*/
-.pullRight a:before
-{
-    position: absolute;
-    width: 1px;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    content: '';
-    background: #FFF;
-    opacity: 0.3;
-    transition: all 0.3s;
-}
-
-.pullRight a:hover:before
-{
-    width: 100%;
-}
-
 
 
 
@@ -93,7 +149,8 @@ body html {
 .info h1{text-align: center;}
 
 .skills{
-	margin-top: 100px;
+	margin-top: 130px;
+  margin-bottom: 130px;
 }
 /* ...........................CSS for the skill bar.....................*/
 
@@ -181,6 +238,7 @@ width:110px;
 
 .row-timeline {
 	background-color: #F8F8F8  ; 
+  margin-top: 130px;
 }
 .description p{
 	text-align: right;
@@ -349,97 +407,649 @@ width:110px;
 
 
 
-/* ...........................CSS for Parallax.....................*/
 
 
 
-  .skrollr-desktop body {
-    height:100% !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ...........................CSS post.....................*/
+
+
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+.white {
+   background-color: white;
+}
+.black {
+  background-color: black;
+}
+.gray{
+  background-color: #b2b2b2;
+}
+
+.h30 {
+  height: 30px;
+}
+.h40 {
+  height: 40px;
+}
+.h50 {
+  height: 50px;
+}
+.h100 {
+  height: 100px;
+}
+.h200 {
+  height: 200px;
+}
+.h290 {
+  height: 290px;
+}
+.h300 {
+  height: 300px;
+}
+.h310 {
+  height: 310px;
+}
+.h400 {
+  height: 400px;
+}
+.h500 {
+  height: 500px;
+}
+.h600 {
+  height: 600px;
+}
+.pl10 {
+  padding-left: 10px;
+}
+.pt10 {
+  padding-top: 10px;
+}
+.pt30 {
+  padding-top: 30px;
+}
+.pt50 {
+  padding-top: 50px;
+}
+.pt70 {
+  padding-top: 70px;
+}
+.pt80 {
+  padding-top: 80px;
+}
+.pb10 {
+  padding-bottom:10px;
+}
+.pb20 {
+  padding-bottom:20px;
+}
+
+.p10 {
+  padding: 10px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+.mt90 {
+  margin-top: 90px; 
+}
+.mt100 {
+  margin-top: 100px; 
+}
+.mr15 {
+  margin-right: 15px;
+}
+.mr5 {
+  margin-right: 5px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.ml15 {
+  margin-left: 15px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+.ml30 {
+  margin-left: 30px;
+}
+.nopad {
+  padding: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mb30 {
+  margin-bottom: 30px;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: none;
+}
+.postbox {
+  height: 500px;
+}
+
+.textbox:hover {
+opacity:1;
+-webkit-transition: all 500ms ease-out;
+-moz-transition: all 500ms ease-out;
+-o-transition: all 500ms ease-out;
+-ms-transition: all 500ms ease-out;
+transition: all 500ms ease-out;
+
+}
+.text {
+text-align: center;
+padding-top: 35%;
+color: white;
+
+}
+
+.textbox {
+width: 100%;
+height: 100%;
+position:absolute;
+
+
+}
+
+
+
+.postbox .textbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  -webkit-transition: all 700ms ease-out;
+  -moz-transition: all 700ms ease-out;
+  -o-transition: all 700ms ease-out;
+  -ms-transition: all 700ms ease-out;
+  transition: all 700ms ease-out;
+  opacity: 0;
+}
+
+.postbox:hover .textbox { opacity: 1; }
+.postbox .overtext {
+  -webkit-transition: all 700ms ease-out;
+  -moz-transition: all 700ms ease-out;
+  -o-transition: all 700ms ease-out;
+  -ms-transition: all 700ms ease-out;
+  transition: all 700ms ease-out;
+  transform: translateY(40px);
+  -webkit-transform: translateY(40px);
+}
+
+.postbox .text {
+  text-align: center;
+  padding-top: 35%;
+  color: white;
+  text-transform: uppercase;
+  opacity: 0;
+  transition-delay: 0.1s;
+  transition-duration: 0.2s;
+}
+
+.postbox:hover .text,
+.postbox:focus .text {
+  opacity: 1;
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+}
+
+.postbox .tagline {
+  font-size: 0.8em;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.postbox:hover .tagline,
+.postbox:focus .tagline {
+  opacity: 1;
+  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+}
+ul {
+  overflow: auto;
+}
+.postlink a {
+  color:red;
+  text-decoration: none;
+}
+.postlink:hover a {
+  color:black;
+  transition: .5s;
+  font-weight: 900;
+}
+
+ul li a i {
+  background: black;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: none;
+  font-size: 25px;
+  text-align: center;
+  margin-right: 10px;
+  padding-top: 15%;
+}
+.over {
+  z-index: 2;
+  position: absolute;
+}
+
+
+
+/*
+
+INDEX OPTIONS CSS
+
+*/
+
+
+
+.line-title {
+  height: 120px; 
+  width:2px; 
+  background-color: red;
+  float: left; 
+  margin-right: 20px;
+}
+.straight-line {
+
+
+}
+/*
+
+END OF INDEX OPTIONS
+
+*/
+/*  START SINGLE POST OPTIONS */
+.postmainimage {
+  height: 100%;
+  padding: 0px;
+  font-size: 10px;
+
+}
+.postcontent {
+  padding: 0px;
+  height: 100%;
+
+}
+.titlebox {
+  position: absolute;
+  z-index: 3;
+  top: 30%;
+text-align: center;
+}
+.titlebox h1 {
+  font-size: 6em;
+  font-weight: 600;
+  line-height: 40px;
+  color: white;
+}
+#posttype {
+  font-size: 30px;
+  font-weight: 100;
+  color: white;
+}
+
+.shortsubjectbox {
+  height:45%;
+  padding-left: 0;
+  text-align: center;
+
+}
+.shortsubject p {
+  padding-top: 20px;
+  font-size: 40px;
+  font-weight: 400;
+  color: black;
+}
+.repeaterfield {
+  vertical-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.quote p {
+  font-size: 40px;
+}
+.quotecredit-line {
+  padding: 0px;
+}
+
+.quotebox {
+  height:55%;
+  padding-left: 0;
+  text-align: center;
+  
+}
+
+.quote {
+  height: 40%;
+  padding-top: 4%;
+  padding-left: 0px;
+  text-align: left;
+  z-index: 300;
+}
+.quote p {
+  font-size: 40px;
+  color: white;
+}
+.quotecredit {
+  padding-right: 0;
+  text-align: left;
+}
+#quotecredit{
+  text-align:left;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+#jobtitle {
+  text-align: left;
+  padding: 0;
+  font-size: 15px;
+  font-weight: 400;
+  color: #1A1A1A;
+}
+.quotejobtitle {
+
+}
+.quotecredit-line {
+  padding: 0px;
+}
+
+.objectivebox {
+  padding-left:0;
+  padding-right: 10%;
+   
+}
+
+.objectivebox p {
+  padding-left: 10%;
+  font-size: 12px;
+  font-weight: 100;
+  margin-bottom: 10%;
+  color: #D3D3D3;
+}
+.objectivebox h1 {
+  padding-left: 10%;
+  padding-top: 10%;
+  font-weight: bold;
+  color: white;
+
+}
+#parallelogram {
+  position: absolute;
+  z-index: 0;
+    height: 100%;
+    width: 100%;
+  -webkit-clip-path: polygon(0 0, 30% 0, 59% 100%, 0% 100%);
+  clip-path: polygon(0 0, 30% 0, 59% 100%, 0% 100%);
+}
+#parallelogram2 {
+  position: absolute;
+  z-index: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-clip-path: polygon(0 0, 83% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 83% 0, 100% 100%, 0% 100%);
+  
+}
+#parallelogram:hover {
+  opacity: .5;
+  transition:1s;
+}
+
+.subjectbox {
+  height: 50%;
+}
+
+
+.prev_next {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+}
+.prev_nextboxover {
+  position: absolute;
+  z-index: 1;
+  background-color: green;
+  height: 100%;
+  width: 100%;
+}
+.prev_nextboxover:hover {
+  opacity: 0;
+  transition: .5s;
+}
+div.prev_next p {
+  font-size: 10px;
+}
+
+.prev_next a {
+text-decoration: none;
+font-size: 5px;
+
+}
+.galleryimages {
+  height: 100%;
+
+}
+/*  END OF SINGLE POST OPTIONS */
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    .mainimage{
+      height: 100%;
+    }
+
+    .welcomebox  {
+      
+      height: 30%;
+    }
+    #posttype {
+      font-size: 15px;
+    }
+    .shortsubject p {
+      font-size: 15px;
+    }
+    .shortsubjectbox {
+      height: 20%;
+    }
+    .quotebox {
+      height: 30%;
+      margin-top: 10px;
+    }
+    .quote p {
+    font-size: 30px;
+    padding-top: 10%;
+    text-align: center;
+    color: white;
+    }
+    .quote {
+      color: white;
+    }
+    .quotecredit-line {
+      display: none;
+    }
+    #quotecredit{
+      padding-left: 10%;
+      padding-top: 13%;
+    font-size: 15px;
+    }
+    #jobtitle {
+      display: none;
+    }
+    .straight-line {
+    visibility: hidden;
+    display: none;
+
+  }
+  .quoteauthor-line {
+    visibility: hidden;
+    display: none;
+
+  }
+  .quote {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .quoteauthor {
+    display: none;
+  }
+  .quote p{
+    font-size: 25px;
+    color:gray;
+
+  }
+  .quotebox {
+    height: 27%;
+    background-color: white;
+
+  }
+    .postcontent {
+      height: 40%;
+      margin-right: auto;
+      overflow: hidden;
+    }
+    .postmainimage {
+      height: 40%;
+      overflow: hidden;
+    }
+
+    .line-title {
+      height:80px;
+      margin-top: 20px;
+    }
+    .titlebox h1 {
+    margin-top: 10%;
+  font-size: 2em;
+  font-weight: 800;
+  color: white;
+  }
+    .postbox {
+      height: 75%;
+    }
+    .singlepost {
+  height: 100%;
   }
 
+    .content {
+      background-color: white;
+    }
+    .container {
+      background-color: white;
+    }
+    .singlepostheader {
+      line-height: 60px;
+      font-size: 50px;
+    }
+    .homepageimagetitle {
+      font-size: 50px;
+      line-height: 40px;
 
-  .parallax-image-wrapper {
-    position:fixed;
-    left:0;
-    width:100%;
-    overflow:hidden;
-  }
+    }
+    .aboutpageimagetitle {
+      font-size: 50px;
+      line-height: 40px;
+    }
+    .imagebox {
+      height: 400px;
+    }
+    .imageboxpic {
+      height: 100%;
+    }
+    .socialmediaicons {
+      display: none;
+    }
+    
+    h1,h2,h3,h4 {
+      font-size: 2em;
+      color: black;
+      line-height: 30px;
+    }
+    a {
+      font-size: .7em;
+      color: black;
+    }
+    .child2 {
+      font-size: 20px;
+    }
 
-  .parallax-image-wrapper-50 {
-    height:50%;
-    top:-50%;
-  }
+}
 
-  .parallax-image-wrapper-100 {
-    height:100%;
-    top:-100%;
-  }
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .content {
+      background-color: #b2b2b2;
+    }
+    .highlightmebig {
+      font-size: 30px;
+    }
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
 
-  .parallax-image {
-    display:none;
-    position:absolute;
-    bottom:0;
-    left:0;
-    width:100%;
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:cover;
-  }
 
-  .parallax-image-50 {
-    height:200%;
-    top:-50%;
-  }
 
-  .parallax-image-100 {
-    height:100%;
-    top:0;
-  }
 
-  .parallax-image.skrollable-between {
-    display:block;
-  }
 
-  .no-skrollr .parallax-image-wrapper {
-    display:none !important;
-  }
-
-  #skrollr-body {
-    height:100%;
-    overflow:visible;
-    position:relative;
-  }
-
-  .gap {
-    background:transparent center no-repeat;
-    background-size:cover;
-  }
-
-  .skrollr .gap {
-    background:transparent !important;
-  }
-
-  .gap-50 {
-    height:50%;
-  }
-
-  .gap-100 {
-    height:100%;
-  }
-
-  .header, .content {
-    background:#fff;
-    padding:1em;
-
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-  }
-
-  .content-full {
-    height:100%;
-  }
-
-  #done {
-    height:100%;
-  }

@@ -4,18 +4,6 @@ Template Name: About
 */
 ?>
 
-<div class="box">
-	<div class="parallax-image-wrapper parallax-image-wrapper-100" data-anchor-target="#top + .gap" data-bottom-top="transform:translate3d(0px, 200%, 0px)" data-top-bottom="transform:translate3d(0px, 0%, 0px)">
-		<div class="parallax-image parallax-image-100"style="background-image:url(<?php the_field('top_image');?>)" data-anchor-target="#top + .gap" data-bottom-top="transform: translate3d(0px, -80%, 0px);" data-top-bottom="transform: translate3d(0px, 80%, 0px);"> 
-		</div>
-		<!--the +/-80% translation can be adjusted to control the speed difference of the image-->
-	</div>
-
-	<div id="skrollr-body">
-		<div  id="top"></div>
-		<div class="gap gap-100" style="background-image:url(<?php the_field('top_image');?>);"></div>
-	</div>
-</div>
 
 
 
@@ -114,51 +102,56 @@ jQuery(document).ready(function(){
 
 </script>
 
+<div class="container skills" style="backgroun-color:#fefefe;">
 
- <div class="container skills" style="backgroun-color:#fefefe;">
+	<h1 style="text-align: center;">Skills</h1>
 
-<h1 style="text-align: center;">Skills</h1>
+	<div class="skillbar clearfix " data-percent="<?php the_field('skillbar_percentage_1'); ?>">
+		<div class="skillbar-title" style="background-color:<?php the_field('skillbar_color_1'); ?>"><span><?php the_field('skillbar_title_1'); ?></span></div>
+		<div class="skillbar-bar" style="background-color:<?php the_field('skillbar_color_1'); ?>"></div>
+		<div class="skill-bar-percent"><?php the_field('skillbar_percentage_1'); ?></div>
+	</div> <!-- End Skill Bar -->
 
-<div class="skillbar clearfix " data-percent="<?php the_field('skillbar_percentage_1'); ?>">
-	<div class="skillbar-title" style="background-color:<?php the_field('skillbar_color_1'); ?>"><span><?php the_field('skillbar_title_1'); ?></span></div>
-	<div class="skillbar-bar" style="background-color:<?php the_field('skillbar_color_1'); ?>"></div>
-	<div class="skill-bar-percent"><?php the_field('skillbar_percentage_1'); ?></div>
-</div> <!-- End Skill Bar -->
+	<div class="skillbar clearfix " data-percent="<?php the_field('skillbar_percentage_2'); ?>">
+		<div class="skillbar-title" style="background-color:<?php the_field('skillbar_color_2'); ?>"><span><?php the_field('skillbar_title_2'); ?></span></div>
+		<div class="skillbar-bar" style="background-color:<?php the_field('skillbar_color_2'); ?>"></div>
+		<div class="skill-bar-percent"><?php the_field('skillbar_percentage_2'); ?></div>
+	</div> <!-- End Skill Bar -->
 
-<div class="skillbar clearfix " data-percent="<?php the_field('skillbar_percentage_2'); ?>">
-	<div class="skillbar-title" style="background-color:<?php the_field('skillbar_color_2'); ?>"><span><?php the_field('skillbar_title_2'); ?></span></div>
-	<div class="skillbar-bar" style="background-color:<?php the_field('skillbar_color_2'); ?>"></div>
-	<div class="skill-bar-percent"><?php the_field('skillbar_percentage_2'); ?></div>
-</div> <!-- End Skill Bar -->
+	<div class="skillbar clearfix " data-percent="<?php the_field('skillbar_percentage_3'); ?>">
+		<div class="skillbar-title" style="background:<?php the_field('skillbar_color_3'); ?>"><span><?php the_field('skillbar_title_3'); ?></span></div>
+		<div class="skillbar-bar" style="background:<?php the_field('skillbar_color_3'); ?>"></div>
+		<div class="skill-bar-percent"><?php the_field('skillbar_percentage_3'); ?></div>
+	</div> <!-- End Skill Bar -->
 
-<div class="skillbar clearfix " data-percent="<?php the_field('skillbar_percentage_3'); ?>">
-	<div class="skillbar-title" style="background:<?php the_field('skillbar_color_3'); ?>"><span><?php the_field('skillbar_title_3'); ?></span></div>
-	<div class="skillbar-bar" style="background:<?php the_field('skillbar_color_3'); ?>"></div>
-	<div class="skill-bar-percent"><?php the_field('skillbar_percentage_3'); ?></div>
-</div> <!-- End Skill Bar -->
+	<div class="skillbar clearfix " data-percent="<?php the_field('skillbar_percentage_4'); ?>">
+		<div class="skillbar-title" style="background:<?php the_field('skillbar_color_4'); ?>"><span><?php the_field('skill_bar_title_4'); ?></span></div>
+		<div class="skillbar-bar" style="background:<?php the_field('skillbar_color_4'); ?>"></div>
+		<div class="skill-bar-percent"><?php the_field('skillbar_percentage_4'); ?></div>
+	</div> <!-- End Skill Bar -->
 
-<div class="skillbar clearfix " data-percent="<?php the_field('skillbar_percentage_4'); ?>">
-	<div class="skillbar-title" style="background:<?php the_field('skillbar_color_4'); ?>"><span><?php the_field('skill_bar_title_4'); ?></span></div>
-	<div class="skillbar-bar" style="background:<?php the_field('skillbar_color_4'); ?>"></div>
-	<div class="skill-bar-percent"><?php the_field('skillbar_percentage_4'); ?></div>
-</div> <!-- End Skill Bar -->
+	<div class="skillbar clearfix " data-percent="<?php the_field('skillbar_percentage_5'); ?>">
+		<div class="skillbar-title" style="background:<?php the_field('skillbar_color_5'); ?>"><span><?php the_field('skillbar_title_5'); ?></span></div>
+		<div class="skillbar-bar" style="background:<?php the_field('skillbar_color_5'); ?>"></div>
+		<div class="skill-bar-percent"><?php the_field('skillbar_percentage_5'); ?></div>
+	</div> <!-- End Skill Bar -->
 
-<div class="skillbar clearfix " data-percent="<?php the_field('skillbar_percentage_5'); ?>">
-	<div class="skillbar-title" style="background:<?php the_field('skillbar_color_5'); ?>"><span><?php the_field('skillbar_title_5'); ?></span></div>
-	<div class="skillbar-bar" style="background:<?php the_field('skillbar_color_5'); ?>"></div>
-	<div class="skill-bar-percent"><?php the_field('skillbar_percentage_5'); ?></div>
-</div> <!-- End Skill Bar -->
-
-<div class="skillbar clearfix " data-percent="<?php the_field('skillbar_percentage_6'); ?>">
-	<div class="skillbar-title" style="background:<?php the_field('skillbar_color_6'); ?>"><span><?php the_field('skillbar_title_6'); ?></span></div>
-	<div class="skillbar-bar" style="background:<?php the_field('skillbar_color_6'); ?>"></div>
-	<div class="skill-bar-percent"><?php the_field('skillbar_percentage_6'); ?></div>
-</div> <!-- End Skill Bar -->
+	<div class="skillbar clearfix " data-percent="<?php the_field('skillbar_percentage_6'); ?>">
+		<div class="skillbar-title" style="background:<?php the_field('skillbar_color_6'); ?>"><span><?php the_field('skillbar_title_6'); ?></span></div>
+		<div class="skillbar-bar" style="background:<?php the_field('skillbar_color_6'); ?>"></div>
+		<div class="skill-bar-percent"><?php the_field('skillbar_percentage_6'); ?></div>
+	</div> <!-- End Skill Bar -->
 
 </div>
 
 
-
+	<div class="footer style="background-color:<?php the_field('footer_color'); ?>"">
+		<div class="container">
+			<p>All work showcase herein was created by EdwardAd (unless otherwise indicated) 
+			and remains the property of its respective copyright holders<br/>
+©2015 Edward Advertising</p>
+		</div>
+	</div>
 
 
 <?php get_footer(); ?>

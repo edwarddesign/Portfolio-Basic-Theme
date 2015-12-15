@@ -13,27 +13,10 @@
 </head>
 <body>
 	
-		<nav class=" navbar navbar-inverse navbar-static-top"  style="background-color:#000;">
-			<div class="container"  style="background-color:#000;"> 
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-				  	<button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				  	</button>
-				  	<a class="navbar-brand" href="<?php bloginfo('url'); ?>/home">My portfolio</a>
-				</div>
-				<!--toggle -->
-				<div class="collapse navbar-collapse pullRight" id="bs-example-navbar-collapse-1">
-				  	<ul class="nav navbar-nav navbar-right">
-						<li><a href="<?php bloginfo('url'); ?>/home">Home</a>
-				    	<li><a href="<?php bloginfo('url'); ?>/about">About</a>
-						<li><a href="<?php bloginfo('url'); ?>/projects">Projects</a>
-						<li><a href="<?php bloginfo('url'); ?>/contact-me">Contact</a>
-				  	</ul>
-				  
-				</div><!-- /.navbar-collapse -->
-			</div>
-		</nav>
+
+
+<?php wp_nav_menu( array( 'theme_location' => 'max_mega_menu_1' ) ); ?>
+
+
+
 
